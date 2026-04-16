@@ -3,215 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnson Center | Elevating Business Excellence</title>
-    <meta name="google-site-verification" content="qb_J7QxbV4QljDQ7INgBaZ1MTABWoSb_T4_pQNR9RmI" />
-    <meta name="description" content="Johnson Center adalah pusat keunggulan bisnis dan konsultasi strategis. Kami membantu perusahaan mencapai potensi maksimal melalui inovasi dan kepemimpinan.">
-    <meta name="keywords" content="Johnson Center, business consulting, corporate strategy, kepemimpinan bisnis, konsultasi perusahaan, johnson center pages">
-    <meta name="author" content="Johnson Center">
-    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="VI6W0BHSKfUO0ESPxfU0N8nnK-kZtEU6_g_MeyKc1ro" />
+    <title>Smoothieware | Premium Digital Solutions & Tech Business</title>
+    <meta name="description" content="Smoothieware menyediakan solusi teknologi eksklusif dan layanan bisnis premium untuk skalabilitas masa depan. Inovasi halus, performa tanpa batas.">
+    <link rel="canonical" href="https://smoothieware.org" />
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>S</text></svg>">
+
+    <script src="https://cdn.tailwindcss.com"></script>
     
-    <link rel="canonical" href="https://pages.johnsoncenter.org/" />
-
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
     <style>
-        :root {
-            --primary-dark: #0f172a; /* Deep Navy */
-            --accent-gold: #cda434;  /* Metallic Gold */
-            --text-light: #f8fafc;
-            --text-muted: #94a3b8;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Playfair+Display:wght@700&display=swap');
 
         body {
-            font-family: 'Lato', sans-serif;
-            background-color: var(--primary-dark);
-            color: var(--text-light);
-            line-height: 1.7;
+            background: #050505;
+            color: #ffffff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
         }
 
-        /* NAVIGATION BAR */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 25px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(205, 164, 52, 0.2);
+        .glass-nav {
+            background: rgba(15, 15, 15, 0.7);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             z-index: 1000;
         }
 
-        /* LOGO FONT ONLY */
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, #1a1a2e 0%, #050505 100%);
+        }
+
         .logo-text {
             font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--text-light);
-            text-decoration: none;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
+            letter-spacing: -1px;
+            background: linear-gradient(to right, #fff, #b5935b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .logo-text span {
-            color: var(--accent-gold);
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text-light);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 400;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent-gold);
-        }
-
-        /* HERO SECTION */
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 8%;
-            background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.95)), url('hero-bg.jpg') center/cover;
-            border-bottom: 2px solid var(--accent-gold);
-        }
-
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 6vw, 5rem);
-            line-height: 1.1;
-            margin-bottom: 20px;
-            max-width: 800px;
-            color: var(--text-light);
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            max-width: 600px;
-            margin-bottom: 40px;
-        }
-
-        .btn-gold {
-            display: inline-block;
-            padding: 15px 40px;
-            background-color: transparent;
-            color: var(--accent-gold);
-            border: 1px solid var(--accent-gold);
-            text-decoration: none;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+        .card-luxury {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.4s ease;
         }
 
+        .card-luxury:hover {
+            border-color: #b5935b;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(181, 147, 91, 0.1);
+        }
+
+        .btn-gold {
+            background: #b5935b;
+            color: #000;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
         .btn-gold:hover {
-            background-color: var(--accent-gold);
-            color: var(--primary-dark);
+            background: #d4af37;
+            transform: scale(1.05);
         }
 
-        /* FOOTER */
-        footer {
-            background-color: #080c17;
-            padding: 60px 8% 30px;
+        .animated-border {
+            position: relative;
         }
 
-        .footer-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 20px;
+        .animated-border::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #b5935b;
+            transition: width 0.3s ease;
         }
 
-        /* GAMBAR FOOTER */
-        .footer-image {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 2px solid var(--accent-gold);
-            padding: 5px;
-            margin-bottom: 15px;
-        }
-
-        .footer-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: var(--accent-gold);
-        }
-
-        .copyright {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            text-align: center;
+        .animated-border:hover::after {
             width: 100%;
-        }
-
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .hero h1 { font-size: 2.5rem; }
         }
     </style>
 </head>
 <body>
 
-    <nav>
-        <a href="https://pages.johnsoncenter.org" class="logo-text">Johnson<span>Center</span></a>
-        <ul class="nav-links">
-            <li><a href="#">Expertise</a></li>
-            <li><a href="#">Insights</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <nav class="glass-nav fixed top-0 w-full py-4 px-8 flex justify-between items-center">
+        <div class="logo-text text-3xl font-extrabold">
+            Smoothieware.
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+            <a href="#" class="animated-border">Home</a>
+            <a href="#" class="animated-border">Services</a>
+            <a href="#" class="animated-border">Portfolio</a>
+            <a href="#" class="animated-border">Contact</a>
+        </div>
+        <button class="btn-gold px-6 py-2 rounded-full text-xs uppercase">Get Started</button>
     </nav>
 
-    <section class="hero">
-        <h1>Shaping the Future of Business.</h1>
-        <p>Kami memberikan wawasan strategis dan solusi kepemimpinan untuk membawa perusahaan Anda menuju keunggulan global.</p>
-        <div>
-            <a href="#consultation" class="btn-gold">Discover Our Expertise</a>
+    <section class="hero-gradient min-h-screen flex flex-col justify-center items-center text-center px-4 pt-20">
+        <h2 class="text-xs uppercase tracking-[0.5em] text-gray-400 mb-4">The Future of Digital Elegance</h2>
+        <h1 class="text-5xl md:text-8xl font-extrabold mb-6 leading-tight">
+            Seamless Tech. <br> <span class="text-gray-500 italic">Smooth Performance.</span>
+        </h1>
+        <p class="max-w-2xl text-gray-400 text-lg mb-10">
+            Membangun ekosistem digital yang kuat dengan estetika premium. Smoothieware menghadirkan solusi pengembangan web dan strategi bisnis kelas dunia.
+        </p>
+        <div class="flex space-x-4">
+            <a href="#" class="btn-gold px-10 py-4 rounded-sm">Explore Project</a>
+            <a href="#" class="border border-white/20 px-10 py-4 rounded-sm hover:bg-white hover:text-black transition">Our Agency</a>
         </div>
     </section>
-              <div style="display: none;">
-     <a href="https://www.shortlyai.com/privacy/">https://www.shortlyai.com/privacy/</a>
-     <a href="https://www1.yellowjacket.com/">Bosmujur</a>
-</div>
-    <footer>
-        <div class="footer-content">
-            <img src="johnson-emblem.jpg" alt="Johnson Center Emblem" class="footer-image">
-            <div class="footer-title">JOHNSON CENTER</div>
-            <p style="color: var(--text-muted); max-width: 400px;">
-                Strategic Business Consulting & Corporate Leadership.
-            </p>
-        </div>
-        <div class="copyright">
-            &copy; 2026 Johnson Center. All Rights Reserved. | <a href="https://pages.johnsoncenter.org" style="color: var(--accent-gold); text-decoration: none;">pages.johnsoncenter.org</a>
-        </div>
-    </footer>
 
+    <section class="py-24 px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card-luxury p-10 rounded-2xl">
+                <div class="text-4xl mb-6">✦</div>
+                <h3 class="text-xl font-bold mb-4">Web Development</h3>
+                <p class="text-gray-400 leading-relaxed">Arsitektur website modern dengan performa tinggi dan keamanan tingkat lanjut.</p>
+            </div>
+            <div class="card-luxury p-10 rounded-2xl">
+                <div class="text-4xl mb-6">✧</div>
+                <h3 class="text-xl font-bold mb-4">Business Strategy</h3>
+                <p class="text-gray-400 leading-relaxed">Transformasi digital untuk meningkatkan pendapatan dan efisiensi operasional.</p>
+            </div>
+            <div class="card-luxury p-10 rounded-2xl">
+                <div class="text-4xl mb-6">❂</div>
+                <h3 class="text-xl font-bold mb-4">SEO Mastery</h3>
+                <p class="text-gray-400 leading-relaxed">Dominasi mesin pencari dengan teknik optimasi data-driven yang terukur.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="border-t border-white/10 py-12 px-8 text-center">
+        <div class="logo-text text-2xl font-bold mb-4 text-white">Smoothieware</div>
+        <p class="text-gray-500 text-sm">© 2026 Smoothieware.org - All Rights Reserved.</p>
+    </footer>
+      <div style="display: none;">
+     <a href="https://order.pitaya-thaistreetfood.com/">slot deposit 5000</a>
+</div>
 </body>
 </html>
